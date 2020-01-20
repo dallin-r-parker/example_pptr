@@ -1,0 +1,27 @@
+{
+  "name": "example_pptr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "twp:start": "npm run twp:clean && node -r esm scripts/twp/",
+    "twp:clean": "rm -rdf scripts/twp/downloads",
+    "twp:reinstall": "npm run twp:clean && npm run reinstall",
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@dallin-r-parker.github.com:dallin-r-parker/example_pptr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "puppeteer": "^2.0.0"
+  }
+}
